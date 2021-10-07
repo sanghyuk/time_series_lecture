@@ -9,13 +9,11 @@ table(cities$area,cities$sido_f)
 #11:서울, 26:부산, 27:대구, 28:인천, 29:광주, 30:대전, 31:울산
 
 names(cities)
-#[1] "X"              "ddate"          "ddd"            "sido"           "all_tot"        "all_below5"     "all_below15"    "all_15_64"     
-#[9] "all_65"         "nonacc_tot"     "nonacc_below5"  "nonacc_below15" "nonacc_15_64"   "nonacc_65"      "circ_tot"       "circ_below5"   
-#[17] "circ_below15"   "circ_15_64"     "circ_65"        "resp_tot"       "resp_below5"    "resp_below15"   "resp_15_64"     "resp_65"       
-#[25] "all_m"          "nonacc_m"       "circ_m"         "resp_m"         "all_f"          "nonacc_f"       "circ_f"         "resp_f"        
-#[33] "month"          "year"           "meantemp"       "mintemp"        "maxtemp"        "meanhumi"       "meanpress"      "dewtemp"       
-#[41] "rain"           "windspeed"      "totsun"         "dow"            "area"           "pm25"           "pm10"           "no2"           
-#[49] "so2"            "co"             "o3"             "sido_f"         "date"  
+#[1] "X"           "ddate"       "ddd"         "sido"        "all_tot"     "all_below5"  "all_below15"
+#[8] "all_15_64"   "all_65"      "month"       "year"        "meantemp"    "mintemp"     "maxtemp"    
+#[15] "meanhumi"    "meanpress"   "dewtemp"     "rain"        "windspeed"   "totsun"      "dow"        
+#[22] "area"        "pm25"        "pm10"        "no2"         "so2"         "co"          "o3"         
+#[29] "sido_f"     
 
 summary(cities$ddate)
 cities$date<-as.Date(cities$ddate)
