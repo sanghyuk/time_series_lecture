@@ -28,7 +28,7 @@ ddply(cities,~sido_f,summarise,MEAN=mean(all_tot),SD=sd(all_tot),Min=min(all_tot
 
 ddply(cities,~sido_f,summarise,MEAN=mean(pm25),SD=sd(pm25),Min=min(pm25),Median=median(pm25),Max=max(pm25))
 
-#통계적 이슈
+#4.통계적 이슈
 seoul<-subset(cities,sido==11)
 plot(seoul$date,seoul$pm10, xlab="Date", ylab=expression(paste("PM"[10],"(",mu,"g/m"^3,")")))
 plot(seoul$date,seoul$all_tot, xlab="Date", ylab="Number of Death")
@@ -39,7 +39,7 @@ plot(fit1)
 fit2<-gam(meantemp~s(ddd,k=100),data=seoul,family=gaussian())
 plot(fit2)
 
-#탐색적 자료 분석
+#5.탐색적 자료 분석
 
 plot(seoul$date,seoul$pm10, xlab="Date", ylab=expression(paste("PM"[10],"(",mu,"g/m"^3,")")))
 
