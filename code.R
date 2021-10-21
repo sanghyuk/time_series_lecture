@@ -83,8 +83,8 @@ with(seoul,plot(date,all_65,main="Over 65",ylab="Moratlity count", pch="x"))
 par(mfrow=c(2,1),mar=c(5,4,3,2)+0.1 )
 x<-seoul$all_65
 acf(x,lag.max=50, main="(a)Seoul mortality",ci.col="black")
-fit<-lm(x~ns(1:4748,2*13))
 
+fit<-lm(x~ns(1:4748,2*13))
 xr<-resid(fit)
 labels<-"(b)Seoul mortality (seasonality removed)"
 acf(xr,lag.max=50, main=labels,ci.col="black")
