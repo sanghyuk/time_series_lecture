@@ -470,7 +470,6 @@ dj<-summary(daejeon.f)
 ulsan.f<-gam(all_tot~pm10+meanhumi+s(meantemp)+dow+s(ddd,k=4*13),family=poisson(),data=ulsan)
 us<-summary(ulsan.f)
 
-
 beta<-c(seoul.f$coefficients["pm10"],busan.f$coefficients["pm10"],daegu.f$coefficients["pm10"],incheon.f$coefficients["pm10"],daejeon.f$coefficients["pm10"],gwangju.f$coefficients["pm10"],ulsan.f$coefficients["pm10"])
 se<-c(se$se["pm10"], bu$se["pm10"],dg$se["pm10"],ic$se["pm10"],gj$se["pm10"],dj$se["pm10"],us$se["pm10"])
 n <- length(beta)
